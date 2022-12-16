@@ -1,7 +1,7 @@
 :root {
   --backgroundColor: #e0e8ec;
-  --headerBackground: #293941;
-  --headerContrast: #7fadca;
+  --headerBackground: #12251b;
+  --headerContrast: #109154;
   --fontColor: var(--headerBackground);
   --headerFont: var(--headerBackground);
   --navFont: var(--headerContrast);
@@ -77,30 +77,37 @@ header a {
   color: var(--navFont);
 }
 
-/* make mobile first */
 .heroBanner {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  background-image: url(../images/02-hero-bg.jpg);
+  background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
-  padding-right: 5em;
-  padding-bottom: 1em;
+  min-height: 400px;
+  padding-right: 3em;
+  padding-bottom: 2em;
   margin-bottom: 2em;
 }
 
-/* make mobile first */
+#me {
+  background-image: url(../images/DS.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+}
+
 .heroBanner h2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
   background-color: var(--heroContrast);
   font-size: 25px;
+  text-align: center;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.1em;
