@@ -1,7 +1,7 @@
 :root {
   --backgroundColor: #e0e8ec;
-  --headerBackground: #12251b;
-  --headerContrast: #109154;
+  --headerBackground: #021b39;
+  --headerContrast: #2a6ce8;
   --fontColor: var(--headerBackground);
   --headerFont: var(--headerBackground);
   --navFont: var(--headerContrast);
@@ -93,7 +93,7 @@ header a {
 }
 
 #me {
-  background-image: url(../images/DS.png);
+  background-image: url(../images/Avatar.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,11 +176,26 @@ header a {
   min-height: 300px;
   color: var(--fontColor);
   text-decoration: none;
+  border: 5px solid var(--cardContrast);
 }
 
 .flexCard div {
   background-color: var(--cardContrast);
-  padding: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0.5em;
+  border-radius: 15px;
+}
+
+.flexCard {
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out:
+}
+
+.flexCard:hover {
+  box-shadow: inset 0px 0px 10px rgb(102, 160, 236), 0 0 15px rgba(102, 160, 236, 1);
 }
 
 .flexCard h3 {
@@ -192,35 +207,35 @@ header a {
 }
 
 .project1 {
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project2 {
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project3 {
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project4 {
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project5 {
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,8 +295,16 @@ header a {
 }
 
 @media only screen and (min-width: 825px) {
+  * {
+    scroll-padding-top: 4.7em;
+  }
+
   header {
     flex-direction: row;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
   }
   
   header h1 {
@@ -304,6 +327,7 @@ header a {
 
   .heroBanner {
     margin-bottom: 0em;
+    margin-top: 4.7em;
   }
   #about {
     flex-direction: row;
