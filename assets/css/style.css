@@ -58,7 +58,6 @@ header nav {
   justify-content: space-around;
   align-items: center;
   background-color: var(--headerBackground);
-  font-size: 25px;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
@@ -69,7 +68,7 @@ header a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0.5em;
   padding-left: 0.75em;
   padding-right: 0.75em;
@@ -207,6 +206,7 @@ header a {
 }
 
 .project1 {
+  display: flex;
   background-image: url(../images/html.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -294,7 +294,7 @@ header a {
   width: 40px;
 }
 
-@media only screen and (min-width: 825px) {
+@media only screen and (min-width: 700px) {
   * {
     scroll-padding-top: 4.7em;
   }
@@ -317,12 +317,17 @@ header a {
     padding-right: 0.5em;
     padding-top: 0em;
     padding-bottom: 0em;
+    font-size: 30px;
   }
   
   header nav {
     width: 75%;
     padding-right: 1.5em;
     justify-content: flex-end;
+  }
+
+  header nav a {
+    font-size: 20px;
   }
 
   .heroBanner {
@@ -388,3 +393,18 @@ header a {
     min-width: 75%;
   }
 }
+
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+  header h1 {
+    min-width: 33%;
+    align-items: center;
+  }
+
+  header nav a {
+    font-size: 15px;
+  }
+
+  header nav {
+    min-width: 67%;
+  }
+  }
